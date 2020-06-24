@@ -1,5 +1,5 @@
 import logging
-import setup  # initialize logger.
+import config  # initialize logger.
 
 logger = logging.getLogger(__name__)
 
@@ -19,8 +19,9 @@ correct_msg = {
     }
 }
 
-logger.info(wrong_msg)
-logger.info(correct_msg)
+if __name__ == '__main__':
+    logger.info(wrong_msg)
+    logger.info(correct_msg)
 
 # TODO TBD
 # try:
